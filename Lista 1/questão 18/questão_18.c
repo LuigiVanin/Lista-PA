@@ -63,8 +63,8 @@ int main() {
         scanf("%d%d", &r2, &c2);
     }
 
-    int e = c1; /* e será igual ao vlor de c1 e r2 que devem ser iguais, pois na múltiplicação de matrizes 
-                o número de colunas da matriz 1 e o número de linhas da 2 devem ser iguais
+    int e = c1; /* e será igual ao valor de c1 e r2 que devem ser iguais, pois na multiplicação de matrizes 
+                o número de colunas da matriz 1 e o número de linhas da matriz 2 devem ser iguais
                 */ 
 
     //Construindo a primeira matriz
@@ -81,7 +81,7 @@ int main() {
 
     /*Mostrando o resultado.*/ 
     printMatrix(result, r1, c2); /*
-                            Lembrando que a matriz resultado deve eu uma matriz com simesões iguias ao número de linha
+                            Lembrando que a matriz resultado deve ser uma matriz com dimensões iguais ao número de linhas
                             da primeia matriz e o número de colunas da segunda matriz
                             */
 

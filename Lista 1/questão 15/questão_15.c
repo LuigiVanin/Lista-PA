@@ -40,7 +40,7 @@ int main () {
         printf("%s: %d\n", item[i].nome, item[i].idade);
     }
 
-    int (*func_point_name)(const void*,const void*) = &compararNome; // construindo um pontriro para função
+    int (*func_point_name)(const void*,const void*) = &compararNome; // construindo um ponteiro para função
 
     qsort(item, 5, sizeof(struct pessoa), func_point_name);
 

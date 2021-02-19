@@ -1,10 +1,10 @@
 #include <stdio.h>      
 #include <stdlib.h>     
 
-int compare (const void * a, const void * b)    /*função que será passada no qsort, essa função estabelece o método de
+int compare (const void * a, const void * b)    /*função que será passada no qsort. Essa função estabelece o método de
                                                 comparação da função qsort().
                                                 Vale salientar que a função recebe valores do tipo "const void" que sig
-                                                nifica receber um tipo genêrico de constante
+                                                nifica receber um tipo genérico de constante.
                                                 */
 {
     return ( *(int*)a - *(int*)b ); // a função retorna a subtração dos dois parâmetros na forma ponteiro inteiro(int*)
@@ -25,7 +25,8 @@ int main ()
 
     int n = sizeof(values) / sizeof(values[0]);
     qsort (values, n, sizeof(int), compare);/*Chamada da função qsort que recebe um vetor de valores a serem ordenados,
-                                            o tamanho desse vetor, o tipo dos valores desse vetor e, por fim,
+                                            o tamanho desse vetor, o tipo dos valores desse vetor e, por fim, a função
+                                            de comparação.
                                             */
 
     printfArray(values, n);// do array ordendo por meio da função printfArray criada nesse código
