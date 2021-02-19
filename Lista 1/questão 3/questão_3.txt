@@ -1,0 +1,8 @@
+p = i;           : legal - tem a atividade de atribuir a variável "p" com valor de "i"
+q = &j;          : legal - atribui a "q" o local de memória de "j", fazendo o ponteiro "q" apontar para "j".
+p = &*&i;        : legal - temos a atribuição do local da memória de "j", pois &*& é igual &, já que "*" busca o valor da variável e "&" o local na memória
+i = (*&)j;       : ilegal
+i = *&j;         : legal - busca do endereço de memória da variável "j"(&j) seguido pelo resgate do valor nesse endereço(*&j).
+i = *&*&j;       : legal - mesma coisa de *&j.
+q = *p;          : ilegal - "q" espera um endereço de memóra para que possa apontar, "*p" fornece o valor armazenado no endereço a qual "p" aponta.
+i = (*p)++ + *q; : legal - caso "p" e "q" estejam apontando para locais de memória essa operação corresponde a ao valor apontado por "p" mais 1 mais o valor apontado por "q"

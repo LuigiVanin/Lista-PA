@@ -1,0 +1,3 @@
+Questão 12.
+
+Ponteiro para função são variáveis que apontam para endereços de memória que contém funções.
